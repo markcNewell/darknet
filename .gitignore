@@ -19,6 +19,8 @@ cfg/
 darknet
 .fuse*
 
+model/
+
 # OS Generated #
 .DS_Store*
 ehthumbs.db
