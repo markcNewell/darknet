@@ -2,7 +2,7 @@ classes= 1
 train  = /home/pjreddie/data/coco/trainvalno5k.txt
 valid  = coco_testdev
 #valid = data/coco_val_5k.list
-names = data/obj.names
+names = darknet/data/obj.names
 backup = /home/pjreddie/backup/
 eval=coco
 
