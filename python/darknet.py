@@ -148,12 +148,12 @@ def array_to_image(arr):
     h = arr.shape[1]
     w = arr.shape[2]
     arr = (arr/255.0).flatten()
-    data = c_array(dn.c_float, arr)
+    data = c_array(c_float, arr)
     im = IMAGE(w,h,c,data)
     return im
 
 
-def detect2(net, meta, image, thresh=.5, hier_thresh=.5, nms=.45):
+def detect2(net, meta, im, thresh=.5, hier_thresh=.5, nms=.45):
     num = c_int(0)
     pnum = pointer(num)
     predict_image(net, im)
